@@ -1,0 +1,19 @@
+
+html{
+    font: 62.5%;
+}
+#btnsubmit{
+    width: 4.5rem;
+    height: 2.5rem;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input[type="text"]{
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

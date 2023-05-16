@@ -7,7 +7,11 @@ Para realizar la busqueda hay que dirigirse al input en la parte superior y text
 ![image](https://github.com/Jean0405/Youtube-1/assets/95113917/e31a0ead-135c-4fbb-a596-6dde2270ed28)
 
 una vez escrita la solicitud, dirigete al botón de buscar junto al input antes mencionado.
+
 ![image](https://github.com/Jean0405/Youtube-1/assets/95113917/89255a00-6068-4c5d-89af-29bfd2d1fb5c).
+....
+....
+....
 
 Solo queda esperar la carga de la información y videos.
 

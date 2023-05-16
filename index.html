@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,11 +15,11 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container-fluid bg-light">
-        <div class="row p-2">
+    <div class="nav-bar bg-dark container-fluid">
+        <div class="row py-2">
             <div class="logo-container col-3 col-sm-3">
                 <img src="./img/youtube.png" alt="">
-                <span class="text-dark">YouTube</span>
+                <span class="text-light">YouTube</span>
             </div>
             <form class="col-9 col-sm-9 d-flex justify-content-center align-items-center" id="form">
                 <input type="text" name="videoName">
@@ -28,40 +27,65 @@
             </form>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="video-details row">
-            <div class="video-container col-9">
-                <iframe src="https://www.youtube.com/embed/nY2507Rxetc"
+    <div class="container-fluid pt-2">
+        <div class="row pb-3">
+            <div class="video-container col-12 col-sm-12 col-md-9 col-lg-9">
+                <!-- <iframe width="100%" height="500px" src="https://www.youtube.com/embed/o2RjWIDZv6k"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                    allowfullscreen></iframe> -->
+                <h2 class="text-light py-2">Title video</h2>
             </div>
-            <div class="channel-details col-3 bg-dark">
+            <div class="channel-detail col-12 col-sm-12 col-md-3 col-lg-3">
                 <!-- channel section -->
-                <div class="col-12 p-1 d-flex justify-content-center align-items-center">
-                    <img src="./img/youtube.png" alt="logo-canal">
-                    <h3 class="text-light">Elrubius</h3>
+                <div class="col d-flex justify-content-start align-items-center mb-3">
+                    <img src="./img/youtube.png" alt="">
+                    <h4 class="text-light mx-2">Jean0405</h4>
                 </div>
                 <!-- comments section -->
                 <div class="col-12">
-                    <div class="comment-detail col-12 border-bottom ">
-                        <h6 class="text-light">Jake</h6>
+                    <div class="comment-detail col-12">
+                        <h6 class="text-danger">Jake</h6>
                         <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="comment-detail col-12 border-bottom ">
-                        <h6 class="text-light">Jake</h6>
+                    <div class="comment-detail col-12">
+                        <h6 class="text-danger">Jake</h6>
                         <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="comment-detail col-12 border-bottom ">
-                        <h6 class="text-light">Jake</h6>
+                    <div class="comment-detail col-12">
+                        <h6 class="text-danger">Jake</h6>
                         <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
+                </div>
+                <!-- description section -->
+                <div class="description col-12 text-light">
+                    <p class="fw-bold m-0">60.120 vistas</p>
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptate. Deserunt
+                        mollitia excepturi ex amet provident enim aspernatur repellendus laborum.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="recommended-section container-fluid">
+        <h1 class="text-danger text-center fw-bold py-3 my-5 mx-2">RECOMMENDED VIDEOS</h1>
+        <div class="row mt-2">
+            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
+                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
+            </div>
+            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
+                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
+            </div>
+            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
+                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
+            </div>
+        </div>
+    </div>
 
     <!-- FONT AWESOME KIT -->
     <script src="https://kit.fontawesome.com/d615d43ab0.js" crossorigin="anonymous"></script>

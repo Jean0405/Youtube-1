@@ -3,7 +3,7 @@ let input = document.getElementsByName("videoName");
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const data = input[0].value;
-  
+  console.log(data);
 });
 
 const options = {

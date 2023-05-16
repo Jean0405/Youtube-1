@@ -4,6 +4,7 @@
 html{
     font: 62.5%;
 }
+
 #btnsubmit{
     width: 4.5rem;
     height: 2.5rem;
@@ -40,38 +41,35 @@ input[type="text"]{
     width: 2rem;
     height: 2rem;
 }
-
-.video-container{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
-.video-container iframe{
-    width: 100%;
-    height: 40rem;
-}
-.channel-details{
-    padding: 1rem;
-}
-.channel-details > div > img{
-    width: 2.5rem;
+.channel-detail img{
+    width: 3rem;
+    height: 3rem;
 }
 
 .comment-detail{
-    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-radius: 0.3rem;
 }
-.comment-detail h6,p{
-    margin: 0;
+.description{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.549);
 }
-@media (max-width: 800px){
-    .video-details{
-        flex-direction: column;
+
+.recommended-section h1{
+   border-radius: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.645);
+}
+
+.recommended-video img{
+    width: 350px;
+}
+@media (max-width: 700px){
+    .recommended-video img{
+        width: 250px;
     }
-    .video-details .video-container {
-        width: 100%;
-    }
-    .video-details .channel-details{
-        width: 100%;
+    .video-container h2{
+        text-align: left;
     }
 }
 @media (max-width: 500px){
@@ -80,6 +78,12 @@ input[type="text"]{
     }
     input[type="text"]{
         width: 10rem;
+    }
+    .recommended-video{
+        flex-direction: column;
+    }
+    .recommended-video img{
+        width: 250px;
     }
 }
 @media (max-width: 350px){

@@ -1,19 +1,92 @@
 
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
 html{
     font: 62.5%;
 }
 #btnsubmit{
     width: 4.5rem;
     height: 2.5rem;
-    border: none;
+    border: 1px solid rgb(170, 170, 170);
+    border-left: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 input[type="text"]{
+    width: 20rem;
     height: 2.5rem;
-    border: none;
+    border: 1px solid rgb(170, 170, 170);
     outline: none;
+    padding-left: 1rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.logo-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container span{
+    color: white;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+    margin-left: 0.3rem;
+}
+.logo-container img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.video-container iframe{
+    width: 100%;
+    height: 40rem;
+}
+.channel-details{
+    padding: 1rem;
+}
+.channel-details > div > img{
+    width: 2.5rem;
+}
+
+.comment-detail{
+    padding: 0.5rem 0;
+}
+.comment-detail h6,p{
+    margin: 0;
+}
+@media (max-width: 800px){
+    .video-details{
+        flex-direction: column;
+    }
+    .video-details .video-container {
+        width: 100%;
+    }
+    .video-details .channel-details{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    #btnsubmit{
+        width: 3.5rem;
+    }
+    input[type="text"]{
+        width: 10rem;
+    }
+}
+@media (max-width: 350px){
+    #btnsubmit{
+        width: 3rem;
+    }
+    input[type="text"]{
+        width: 7rem;
+    }
 }

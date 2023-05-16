@@ -3,7 +3,7 @@ let input = document.getElementsByName("videoName");
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const data = input[0].value;
-  console.log(data);
+  
 });
 
 const options = {
@@ -17,7 +17,7 @@ const options = {
 export const getVideos = async (data) => {
   const video = await (
     await fetch(
-      `https://youtube138.p.rapidapi.com/search/?q=${data.videoName}&hl=en&gl=US`,
+      `https://youtube138.p.rapidapi.com/search/?q=${data}&hl=en&gl=US`,
       options
     )
   ).json();

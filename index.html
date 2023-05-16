@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,23 +31,27 @@
     <div class="container-fluid pt-2">
         <div class="row pb-3">
             <div class="video-container col-12 col-sm-12 col-md-9 col-lg-9">
-                <!-- <iframe width="100%" height="500px" src="https://www.youtube.com/embed/o2RjWIDZv6k"
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/xOinGb2MZSk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe> -->
-                <h2 class="text-light py-2">Title video</h2>
+                    allowfullscreen></iframe>
+                <h2 class="text-light py-2" id="video-title">Curso de JAVASCRIPT desde CERO (Completo) - Nivel MID LEVEL
+                </h2>
             </div>
             <div class="channel-detail col-12 col-sm-12 col-md-3 col-lg-3">
                 <!-- channel section -->
-                <div class="col d-flex justify-content-start align-items-center mb-3">
-                    <img src="./img/youtube.png" alt="">
-                    <h4 class="text-light mx-2">Jean0405</h4>
+                <div class="channel col d-flex justify-content-start align-items-center mb-3">
+                    <img class="rounded-circle" id="channel-logo"
+                        src="https://yt3.googleusercontent.com/jHpWdf9qWNdrCjxfQxCxR0aiYY9Y1IO7s6Jwlk-OgKxS8nzjEMffakE6mdOdp2u22R3130U0nQ=s176-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <h4 class="text-light ms-3" id="videoAuthor">Soy Dalto</h4>
                 </div>
                 <!-- comments section -->
-                <div class="col-12">
+                <div class="col-12" id="comments-container">
                     <div class="comment-detail col-12">
-                        <h6 class="text-danger">Jake</h6>
-                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h6 class="text-danger" id="userOne">Jake</h6>
+                        <p class="text-light" id="desUserOne">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                     <div class="comment-detail col-12">
                         <h6 class="text-danger">Jake</h6>
@@ -59,31 +64,19 @@
                 </div>
                 <!-- description section -->
                 <div class="description col-12 text-light">
-                    <p class="fw-bold m-0">60.120 vistas</p>
-                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptate. Deserunt
-                        mollitia excepturi ex amet provident enim aspernatur repellendus laborum.</p>
+                    <p class="fw-bold m-0" id="views">604.460 vistas</p>
+                    <p class="m-0" id="description">¿Queres aprender a programar en Javascript desde cero?
+                        Este es el curso de javascript desde cero a experto que vas a terminar, te prometo que no te vas
+                        a aburrir durante el aprendizaje de este curso de javascript, vas a aprender javascript fácil.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="recommended-section container-fluid">
+    <div class="recommended-section container-fluid px-2">
         <h1 class="text-danger text-center fw-bold py-3 my-5 mx-2">RECOMMENDED VIDEOS</h1>
-        <div class="row mt-2">
-            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
-                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
-                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
-            </div>
-            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
-                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
-                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
-            </div>
-            <div class="recommended-video col-12 d-flex justify-content-start align-items-center text-light my-2">
-                <img src="https://th.bing.com/th/id/R.663333f62dea32cb4924de2b5fb7280e?rik=dmK0geMIrRb7RA&riu=http%3a%2f%2fwww.coachingconciencia.com%2fwp-content%2fuploads%2f2017%2f01%2fanimarse-a-volar.jpg&ehk=kkS%2b9hl%2f4PYxrSd8ptP2QQAL00bSL7XzEqaPUE1OSNI%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
-                <p class="text-center fs-5 mt-1 mx-3">Alianza Petrolera vs. Nacional (resumen y goles) | Liga BetPlay Dimayor 2023-1 | Fecha 19</p>
-            </div>
+        <div class="recommended-videos-container row mt-2 text-light">
+            <!-- recommended videos on js -->
         </div>
     </div>
 

@@ -7,17 +7,22 @@ html{
 
 #btnsubmit{
     width: 4.5rem;
-    height: 2.5rem;
-    border: 1px solid rgb(170, 170, 170);
-    border-left: 0;
+    height: 2.485rem;
+    border: 1px solid transparent;
+    border-left: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: rgb(221, 221, 221);
+}
+#btnsubmit:active{
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
 }
 
 input[type="text"]{
     width: 20rem;
-    height: 2.5rem;
-    border: 1px solid rgb(170, 170, 170);
+    height: 2.485rem;
+    border: 1px solid transparent;
     outline: none;
     padding-left: 1rem;
     border-top-left-radius: 20px;

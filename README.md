@@ -1,34 +1,43 @@
 # Youtube-chibi
 
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/dc696320-2c14-4753-b47a-d950c46ed086)
-Esta sería la página home donde de forma predeterminada ya hay un video enlazado.
+## GUIA DE USO DE LA PÁGINA.
 
-Para realizar la busqueda hay que dirigirse al input en la parte superior y textear el nombre del video deseado.
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/e31a0ead-135c-4fbb-a596-6dde2270ed28)
+![Logo Youtube](./img/youtube.png)
 
-una vez escrita la solicitud, dirigete al botón de buscar junto al input antes mencionado.
+## Buscar video:
 
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/89255a00-6068-4c5d-89af-29bfd2d1fb5c).
+**Paso 1:** Para realizar una busqueda debes dirigirte a la parte superior de la página y escribir el nombre de tu video en la caja de texto **(input)**.
+**Paso 2:** Una vez escrito eso, debes presionar el botón de buscar que se encuentra justo al lado derecho del input.
+**Paso 3:** Después de una corta espera podrás visualizar el video deseado, comentarios, detalles del canal, descripción del video y además ver también los video relacionados y recomendados en la parte inferior de la página web.
 
-....
-....
-....
+![Home page Youtube Chibi](./img/Screenshot%20from%202023-05-17%2014-18-54.png)
 
+##Caracteristicas de la página:
+**1:**La principal caracteristica es el **RESPONSIVE** de la página,la cual la hace adaptable a cualquier pantalla.
+**2:**Luego tenemos una paleta de colores lo más similar posible a la página oficial de YOUTUBE.
+**3:**Los comentarios están limitados a solo visualizarse 3 de todos ellos.
 
-Solo queda esperar la carga de la información y videos.
-Una vez cargada, te encontrarás con lo siguiente:
+## Explicación del código:
 
--Video principal y titulo:
+## Módulo MAIN.JS
 
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/af4baedb-718b-419a-a3ea-e3217b96b85a)
+**Función main:**
+Esta función main realiza la obtención de los datos ingresados por el usuario en el input, además de encargarse de enviarlos a la función GET.
+**Función getVideos:**
+Esta es la encargada de las peticiones tipo _FETCH_ a la API de Youtube, además de proveernos los datos necesarios para otras busquedas en la misma API.
 
--canal, comentarios y descripción del video:
+## Módulo RENDER.JS
 
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/0f2e4f8a-d652-4f65-a204-c894c1d04460)
+**Función renderVideo**
+Aquella encargada de recibir los datos obtenidos en la función _getVideos_ y renderizar esos datos en la página, asi como también mostrar el video obtenido.
 
--videos recomendados: 
+_Sección del video principal_
+Para el video principal solo mostramos aquel en la primera posición de la busqueda e imprimimos sus datos y el video.
 
-![image](https://github.com/Jean0405/Youtube-1/assets/95113917/43763224-c9f1-4d8d-a5a6-45ac8cb6b78e)
+_Sección recomendados_
+Para la sección de recomendados recorremos usando un _FOREACH_ todo el array de videos obtenidos y los renderizamos en la parte inferior de la página.
 
-Y LISTO!! <3
+_Sección comentarios_
+Para esta sección se utilizó el ID del video principal obtenido en el **getVideos** para realizar otro _FETCH_ encargado de buscar los comentarios del video, para luego ser renderizados unicamente los primeros 3 datos hallados.
 
+## ¡ESO ES TODO!
